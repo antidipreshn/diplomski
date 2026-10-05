@@ -266,7 +266,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--prvo", default=str(KOREN / "bench/results/finalno_1.csv"))
     parser.add_argument("--drugo", default=str(KOREN / "bench/results/finalno_2.csv"))
-    parser.add_argument("--izlaz", default=str(KOREN / "docs/finalna_merenja.md"))
+    parser.add_argument("--izlaz", default=str(KOREN / "analysis/finalna_merenja.md"))
     argumenti = parser.parse_args()
     okruzenje = Path(argumenti.prvo).with_suffix(".okruzenje.txt")
     tekst = napravi(argumenti.prvo, argumenti.drugo, okruzenje)
