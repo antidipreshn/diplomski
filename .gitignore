@@ -1,0 +1,15 @@
+.venv/
+.idea/
+__pycache__/
+*.pyc
+
+docs/
+
+data/msmarco/
+data/embeddings/
+data/indeksi/
+data/ground_truth/
+*.npy
+*.npz
+*.faiss
+*.parquet

@@ -1,0 +1,21 @@
+os: Windows-10-10.0.19045-SP0
+python: 3.12.0
+procesor: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+logicka_jezgra: 8
+numpy: 2.5.3
+blas: openblas 0.3.34.106.0 niti=8; openmp None niti=8; openblas 0.3.30 niti=8
+cupy: 14.2.0
+cuda_runtime: 12090
+gpu: NVIDIA GeForce RTX 3080
+compute_capability: 8.6
+cupy_tf32: nije postavljeno
+drajver_i_maks_takt: 560.94, 2115 MHz, 9501 MHz
+torch: 2.14.0+cu126
+tf32: False
+faiss: 1.15.1
+faiss_gpu: 0
+faiss_niti: 8
+config: cfg_s3s2.yaml
+teorijski_opseg_maks_takt_gbps: 760.1
+teorijski_opseg_pri_taktu_gbps: 740.1
+takt_memorije_pod_opterecenjem: 9251 MHz (P2)

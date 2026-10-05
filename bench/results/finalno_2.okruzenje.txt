@@ -1,0 +1,28 @@
+os: Windows-10-10.0.19045-SP0
+python: 3.12.0
+procesor: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+logicka_jezgra: 8
+numpy: 2.5.3
+blas: openblas 0.3.34.106.0 niti=8; openmp None niti=8; openblas 0.3.30 niti=8; openmp None niti=8; openmp None niti=1
+cupy: 14.2.0
+cuda_runtime: 12090
+gpu: NVIDIA GeForce RTX 3080
+compute_capability: 8.6
+cupy_tf32: nije postavljeno
+drajver_i_maks_takt: 560.94, 2235 MHz, 9501 MHz
+torch: 2.14.0+cu126
+tf32: False
+faiss: 1.15.1
+faiss_gpu: 0
+faiss_niti: 8
+config: C:\aja_diplomski\bench\config.yaml
+torch_metoda: torch.mv + torch.topk nad CuPy nizovima bez kopiranja; isti default stream kao CUDA events; TF32 iskljucen
+kompletna_pretraga: gpu_pretraga = S2 + T3, gpu_torch_kompletna = mv + topk; upit iz RAM-a na karticu i k rezultata nazad u RAM ulaze u vreme
+rag: retrieval bez jezickog modela; N=1000000, k=10, varijante=['gpu_pretraga', 'cpu_numpy', 'cpu_hnsw'], efSearch=128, model na cuda; faze se mere perf_counter-om
+faiss_flat_niti: jedan upit po pozivu; 1-8 niti daju priblizno istu medijanu (samotest faiss_flat.py), 8 niti veci raspon
+hnsw: IndexHNSWFlat, unutrasnji proizvod, M=32, efConstruction=200, efSearch=[16, 32, 64, 128, 256, 512]
+hnsw_niti: izgradnja: niti_procesora; pretraga: jedan upit po pozivu, FAISS paralelizuje po upitima pa radi jedna nit
+teorijski_opseg_maks_takt_gbps: 760.1
+teorijski_opseg_pri_taktu_gbps: 740.1
+takt_memorije_pod_opterecenjem: 9251 MHz (P2)
+teorijski_opseg_cpu_gbps: 48.0 (4 modula, 3000 MT/s, 2 kanala)

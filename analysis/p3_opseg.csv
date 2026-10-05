@@ -1,0 +1,10 @@
+metoda,uredjaj,k,medijana_ms,gbps,granica_izmerena_gbps,procenat_izmerene,granica_teorijska_gbps,procenat_teorijske,izvor
+cpu_numpy,cpu,10,87.9023,34.9,37.5,93.1,48.0,72.8,rezultati_20260924_194559.csv
+cpu_faiss_flat,cpu,10,135.6497,22.6,37.5,60.3,48.0,47.2,rezultati_20260924_194559.csv
+gpu_s1,gpu,,48.3473,63.5,685.3,9.3,760.1,8.4,rezultati_20260922_181437.csv
+gpu_s2,gpu,,4.3213,710.9,685.3,103.7,760.1,93.5,rezultati_20260922_181437.csv
+gpu_s3,gpu,,4.3284,709.7,685.3,103.6,760.1,93.4,rezultati_20260922_181437.csv
+gpu_s4,gpu,,4.3263,710.1,685.3,103.6,760.1,93.4,rezultati_20260922_181437.csv
+gpu_s5,gpu,,4.3223,710.7,685.3,103.7,760.1,93.5,rezultati_20260922_181437.csv
+gpu_pretraga,gpu,10,4.4790,685.9,685.3,100.1,760.1,90.2,rezultati_20260924_194559.csv
+gpu_torch_kompletna,gpu,10,4.5629,673.2,685.3,98.2,760.1,88.6,rezultati_20260924_194559.csv

@@ -1,0 +1,15 @@
+metoda,serija,uredjaj,izvor,N,d,k,ef_search,broj_upita,medijana_ms,min_ms,max_ms,ponavljanja,warmup,recall,zamene,max_razlika,kandidati,propusni_opseg_gbps,procenat_opsega,udeo_pretrage,stanje_gpu,vreme_pokretanja
+propusni_opseg,,gpu,,,,,,,0.792896,0.781312,1.279776,20,1166,,,,,677.1,,,P2 1995/9251 MHz,2026-09-24T21:28:15
+propusni_opseg_cpu,,cpu,,,,,,,54.8274,53.5711,57.6251,20,5,,,,,39.17,,,,2026-09-24T21:28:17
+rag_gpu_pretraga_ugradnja,rag,cpu,msmarco,1000000,768,10,,100,9.5796,8.902,11.7229,100,71,,,,,,,,,2026-09-24T21:28:33
+rag_gpu_pretraga_pretraga,rag,cpu,msmarco,1000000,768,10,,100,4.55965,4.5196,5.4399,100,71,1.0,0,,,,,,,2026-09-24T21:28:33
+rag_gpu_pretraga_tekst,rag,cpu,msmarco,1000000,768,10,,100,0.0125,0.0092,0.0193,100,71,,,,,,,,,2026-09-24T21:28:33
+rag_gpu_pretraga_ukupno,rag,cpu,msmarco,1000000,768,10,,100,14.165,13.4433,16.3523,100,71,,,,,,,0.3248,,2026-09-24T21:28:33
+rag_cpu_numpy_ugradnja,rag,cpu,msmarco,1000000,768,10,,100,10.075,9.4249,108.8891,100,9,,,,,,,,,2026-09-24T21:28:54
+rag_cpu_numpy_pretraga,rag,cpu,msmarco,1000000,768,10,,100,92.6801,88.0935,136.4319,100,9,1.0,0,,,,,,,2026-09-24T21:28:54
+rag_cpu_numpy_tekst,rag,cpu,msmarco,1000000,768,10,,100,0.0188,0.0137,0.0625,100,9,,,,,,,,,2026-09-24T21:28:54
+rag_cpu_numpy_ukupno,rag,cpu,msmarco,1000000,768,10,,100,103.30165,97.7173,212.2333,100,9,,,,,,,0.9012,,2026-09-24T21:28:54
+rag_cpu_hnsw_ugradnja,rag,cpu,msmarco,1000000,768,10,128,100,10.04685,9.4431,17.918,100,84,,,,,,,,,2026-09-24T21:28:56
+rag_cpu_hnsw_pretraga,rag,cpu,msmarco,1000000,768,10,128,100,0.6499,0.3311,1.2677,100,84,0.985,0,,,,,,,2026-09-24T21:28:56
+rag_cpu_hnsw_tekst,rag,cpu,msmarco,1000000,768,10,128,100,0.0116,0.0095,0.0463,100,84,,,,,,,,,2026-09-24T21:28:56
+rag_cpu_hnsw_ukupno,rag,cpu,msmarco,1000000,768,10,128,100,10.7588,10.0297,18.4932,100,84,,,,,,,0.0583,,2026-09-24T21:28:56

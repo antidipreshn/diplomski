@@ -1,0 +1,9 @@
+metoda,naziv,k,medijana_ms,min_ms,max_ms,recall,izvor
+gpu_pretraga,S2 + T3 (GPU),10,4.472144,4.46464,5.043616,1.0,finalno_1.csv
+cpu_numpy,NumPy (CPU),10,88.7586,87.4188,91.6054,1.0,finalno_1.csv
+gpu_torch_kompletna,PyTorch (GPU),10,4.55688,4.530432,5.123072,1.0,finalno_1.csv
+cpu_faiss_flat,FAISS-Flat (CPU),10,131.6636,129.3242,143.2992,1.0,finalno_1.csv
+gpu_pretraga,S2 + T3 (GPU),100,6.083584,6.07232,6.65296,1.0,finalno_1.csv
+cpu_numpy,NumPy (CPU),100,88.6292,87.5282,91.1634,1.0,finalno_1.csv
+gpu_torch_kompletna,PyTorch (GPU),100,4.559872,4.549632,5.119232,1.0,finalno_1.csv
+cpu_faiss_flat,FAISS-Flat (CPU),100,131.46795,129.1064,137.589,1.0,finalno_1.csv

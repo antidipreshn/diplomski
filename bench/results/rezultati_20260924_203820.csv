@@ -1,0 +1,3 @@
+metoda,serija,uredjaj,izvor,N,d,k,ef_search,broj_upita,medijana_ms,min_ms,max_ms,ponavljanja,warmup,recall,zamene,max_razlika,kandidati,propusni_opseg_gbps,procenat_opsega,stanje_gpu,vreme_pokretanja
+propusni_opseg,,gpu,,,,,,,0.78336,0.780288,0.909152,20,1159,,,,,685.34,,P2 1995/9251 MHz,2026-09-24T20:38:24
+propusni_opseg_cpu,,cpu,,,,,,,57.20255,53.8019,85.2583,20,5,,,,,37.54,,,2026-09-24T20:38:25

@@ -1,0 +1,82 @@
+podaci:
+  izvor: msmarco
+  N: [10000, 100000, 1000000]
+  d: 768
+  k: [1, 5, 10, 20, 50, 100]
+  broj_upita: 100
+  seed_korpus: 0
+  seed_upit: 1
+
+merenje:
+  warmup: 5
+  zagrevanje_gpu_ms: 1000
+  ponavljanja: 100
+  tolerancija: 1.0e-5
+  niti_procesora: 8
+  metode: [cpu_numpy, cpu_hnsw, gpu_s1, gpu_s2, gpu_s3, gpu_s4, gpu_s5, gpu_t1, gpu_t2, gpu_t3, gpu_t4, gpu_torch, cpu_faiss_flat, gpu_pretraga, gpu_torch_kompletna]
+
+prelomna_tacka:
+  N: [1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000, 1000000]
+  k: [10, 100]
+  metode: [cpu_numpy, cpu_faiss_flat, gpu_torch_kompletna, gpu_pretraga]
+
+kerneli:
+  s1: {blok: 256}
+  s2: {warpova_po_bloku: 8}
+  s3: {warpova_po_bloku: 8}
+  s4: {warpova_po_bloku: 8}
+  s5: {}
+  t1: {blok: 256}
+  t2: {blok: 256, segment: 4096}
+  t3: {blok: 256, segment: 4096}
+  t4: {blok: 256, velicina_grupe: 32}
+
+hnsw:
+  M: 32
+  ef_construction: 200
+  ef_search: [16, 32, 64, 128, 256, 512]
+
+naivna:
+  max_N: 5000
+  k: [10]
+  ponavljanja: 20
+  broj_upita_provere: 5
+
+prenos_korpusa:
+  warmup: 5
+  ponavljanja: 20
+  zagrevanje_ms: 1000
+
+propusni_opseg:
+  velicina_mb: 256
+  warmup: 5
+  ponavljanja: 20
+  zagrevanje_ms: 1000
+
+rag:
+  ukljuceno: true
+  N: 1000000
+  k: 10
+  ef_search: 128
+  varijante: [gpu_pretraga, cpu_numpy, cpu_hnsw]
+  uredjaj_modela: cuda
+
+propusni_opseg_cpu:
+  velicina_mb: 2048
+  warmup: 5
+  ponavljanja: 20
+
+pracenje_takta:
+  ukljuceno: true
+  interval_ms: 500
+
+putanje:
+  korpus: data/embeddings/pasusi_N1000000.npy
+  upiti: data/embeddings/upiti_Q1000.npy
+  opis: data/embeddings/opis_N1000000_Q1000.json
+  pid: data/embeddings/pasusi_N1000000_pid.npy
+  upiti_tekst: data/embeddings/upiti_Q1000.parquet
+  pasusi_tekst: data/msmarco/pasusi.parquet
+  ground_truth: data/ground_truth
+  indeksi: data/indeksi
+  rezultati: bench/results
