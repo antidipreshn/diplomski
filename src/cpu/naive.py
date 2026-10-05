@@ -1,5 +1,4 @@
 import numpy as np
-import numpy.f2py.f2py2e
 
 
 def slicnosti_naivno(korpus, upit):
@@ -60,5 +59,3 @@ if __name__ == "__main__":
     print(f"najveca razlika u vrednostima: {razlika:.3e}")
     print("prvih 5 indeksa:", ind_naivno[:5])
     print("prvih 5 vrednosti:", vrd_naivno[:5])
-
-    print("jaaaaaaaa: ", (np.show_config(mode="dicts")))
